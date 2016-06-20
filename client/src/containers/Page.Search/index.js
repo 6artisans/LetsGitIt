@@ -26,7 +26,8 @@ class PageSearch extends Component {
     event.preventDefault();
 
     this.props.searchRepo(this.state.query);
-    this.setState({ query: '' });
+    // NOTE: why should we clear search input? I want to know what I am looking at
+    // this.setState({ query: '' });
   }
 
   renderResults() {
